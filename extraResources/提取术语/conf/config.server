@@ -1,0 +1,16 @@
+ClientAgent.Endpoints = tcp -h 127.0.0.1 -p 11000
+Ice.Default.Timeout=10000
+Ice.Warn.Connections=1
+SSO_URL=http://uc.iol8.com/V2_0/
+PE_URL=http://term.iol8.com/V5_0/index.php?
+SYNC_URL=http://term.iol8.com/cloud/
+REMOTE_MATCH_URL=http://117.121.7.125:8989/procer/matchtext
+#SSO_URL=http://10.5.110.132:8082/V2_0/
+#PE_URL=http://10.5.110.132/V5_0/index.php?
+#SYNC_URL=http://term.transn.net/
+#REMOTE_MATCH_URL=http://10.5.110.132:8180/procer/matchText
+MACHINE_TR_URL=http://fanyi.baidu.com/v2transapi
+CONHD_NUM=6
+SYNCREQ_TIMEOUT=10
+TIMINGSYNC_INTERVAL=900
+COMMONREQ_TIMEOUT=2

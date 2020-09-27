@@ -1,0 +1,14 @@
+<!DOCTYPE html><html lang=en style=font-size:100px><head><meta charset=utf-8><meta http-equiv=X-UA-Compatible content="IE=edge"><meta name=viewport content="width=device-width,initial-scale=1"><link rel=icon href=dist/favicon.ico><title>语到翻译</title><script>if(!window.require) {
+         window.require = function(arg) {
+             return {
+                 remote: {require(){return {}},getCurrentWindow() {return {}}},
+                 ipcRenderer: {send() {},on() {},once() {}}
+             }
+         }
+     }</script><link href=dist/css/app.d757d1c1.css rel=preload as=style><link href=dist/js/app.f479250f.js rel=preload as=script><link href=dist/js/chunk-vendors.d681e423.js rel=preload as=script><link href=dist/css/app.d757d1c1.css rel=stylesheet></head><body><noscript><strong>We're sorry but hello doesn't work properly without JavaScript enabled. Please enable it to continue.</strong></noscript><div id=app></div><script>(() => {
+          // var fs = Math.floor(100 *(screen.availHeight / 900).toFixed(2) );
+          // document.documentElement.style['font-size'] = Math.floor(fs/2) * 2 +'px';
+          var times = (screen.availHeight / 900).toFixed(2);
+          times = Math.ceil(times*10)/10
+          document.documentElement.style['font-size'] = 100 * times +'px';
+      })()</script><script src=dist/js/chunk-vendors.d681e423.js></script><script src=dist/js/app.f479250f.js></script></body></html>

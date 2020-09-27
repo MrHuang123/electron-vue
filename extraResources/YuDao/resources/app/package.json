@@ -1,0 +1,36 @@
+{
+  "name": "yudao-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "electron.prod.js",
+  "scripts": {
+    "dev": "cross-env value=development  electron  ./electron.dev.js",
+    "build": "cross-env value=product  electron-packager . YuDao --platform=win32  --download.mirror=https://npm.taobao.org/mirrors/electron/ --electron-version=3.0.9 --arch=ia32 --out ./App --overwrite --ignore=App/ --ignore=electron/ --ignore=./node_modules --ignore=render/node_modules --ignore=render/public --ignore=.postcssrc.js  --ignore=render/babel.config.js --ignore=render/https.js --ignore=render/setEnv.js --ignore=render/tsconfig.json --ignore=render/vue.config.js --ignore=render/main.bat --ignore=render/src --ignore=render/package.json --ignore=.gitignore --ignore=electron.dev.js --ignore=yarn.lock --ignore=yarn-error.log --ignore=move.js --ignore=package-lock.json  --icon=./main/icons/logo.ico  && node electron.move.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "address": "^1.0.3",
+    "chardet": "^0.7.0",
+    "electron-drag": "^1.2.2",
+    "jschardet": "^1.6.0",
+    "multer": "^1.4.1",
+    "nedb": "^1.8.0",
+    "net": "^1.0.2",
+    "rage-edit": "^1.2.0",
+    "regedit": "^3.0.2"
+  },
+  "devDependencies": {
+    "archiver": "^3.0.0",
+    "chalk": "^2.4.2",
+    "colors": "^1.3.3",
+    "cross-env": "^5.2.0",
+    "electron": "^3.0.16",
+    "electron-debug": "^2.0.0",
+    "electron-devtools-installer": "^2.2.4",
+    "electron-packager": "^13.1.1",
+    "ipv4": "^1.0.4",
+    "ora": "^3.4.0",
+    "extract-zip": "^1.6.7"
+  }
+}
